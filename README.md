@@ -22,5 +22,10 @@
  * Spring Security
  * MySQL 
  * BCrypt Password Encoder
- * Postman 
+ * Postman
+
+#### Custom Exception Handling
+  * BookNotAvailableException: Thrown when a user tries to borrow an unavailable book.
+  * UserNotFoundException: Thrown when specified user details are not found.
+  * Global Exception Handler: Provides a consistent format for all API error responses.
 
