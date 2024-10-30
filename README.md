@@ -16,7 +16,8 @@
 #### Exception Handling:
  * Custom exceptions for scenarios like BookNotAvailableException, UserNotFoundException, and UnauthorizedAccessException
  * Global Exception Handler for consistent error responses
-#### Technologies Used:
+ * 
+## Technologies Used:
  * Java
  * Spring Boot
  * Spring Security
@@ -24,8 +25,24 @@
  * BCrypt Password Encoder
  * Postman
 
+
+
+## Usage
+### API Endpoints
+#### Admin APIs:
+  * POST /api/admin/users: Create new users
+  * PUT /api/admin/users/{userId}: Update user details
+  * DELETE /api/admin/users/{userId}: Delete users
+#### Librarian APIs:
+  * POST /api/librarian/books: Add new books
+  * PUT /api/librarian/books/{bookId}: Update book details
+  * DELETE /api/librarian/books/{bookId}: Delete a book
+#### Member APIs
+  * GET /api/member/books: View available books
+  * POST /api/member/borrow/{bookId}: Borrow a book
+
 #### Custom Exception Handling
   * BookNotAvailableException: Thrown when a user tries to borrow an unavailable book.
   * UserNotFoundException: Thrown when specified user details are not found.
-  * Global Exception Handler: Provides a consistent format for all API error responses.
+  * Global Exception Handler: Provides a consistent format for all API error responses
 
